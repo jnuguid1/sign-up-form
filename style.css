@@ -1,0 +1,17 @@
+:root {
+
+}
+
+body {
+    display:flex;
+}
+
+.side-background-container {
+    height: 100vh;
+    width: 30%;
+}
+
+.form-content {
+    height: 100vh;
+    width: 30%;
+}

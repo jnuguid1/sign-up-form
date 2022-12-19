@@ -60,13 +60,10 @@ body {
 
 .form-container {
     background-color: var(--form-container-bg-color);
-    position: absolute;
-    left: 0;
-    width: calc(100% - 56px);
     height: 240px;
-    padding-left: 56px;
-    padding-bottom: 30px;
+    padding: 20px 56px 0 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-left: -56px;
 }
 
 #form-header {
@@ -74,6 +71,7 @@ body {
     font-family: var(--form-content-font);
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 0 0 24px 0;
 }
 
 .form-row {
@@ -106,8 +104,7 @@ input {
 }
 
 .submit-button {
-    position: relative;
-    top: 60px;
+    margin-top: 30px;
 }
 
 .submit-button button {

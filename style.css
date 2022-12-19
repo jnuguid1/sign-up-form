@@ -10,6 +10,7 @@
     --form-button-color: #596d48;
     --form-content-bg-color: rgb(243, 243, 243);
     --form-container-bg-color: white;
+    --form-content-font: 'Roboto', sans-serif;
 }
 
 body {
@@ -43,30 +44,95 @@ body {
 
 .form-content {
     width: 70%;
-    padding: 5% 56px;
+    padding-top: 5%;
+    padding-left: 56px;
     background-color: var(--form-content-bg-color);
     position: relative;
 }
 
 .call-to-action-text {
-    width: 70%;
+    width: 60%;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'Helvetica';
-    padding-bottom: 36px;
+    font-family: var(--form-content-font);
+    margin-bottom: 36px;
 }
 
 .form-container {
     background-color: var(--form-container-bg-color);
     position: absolute;
     left: 0;
-    height: 250px;
+    width: calc(100% - 56px);
+    height: 240px;
     padding-left: 56px;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 #form-header {
-    color:rgb(25, 25, 93);
+    color:rgb(22, 22, 51);
+    font-family: var(--form-content-font);
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: var(--form-content-font);
+    font-size: 0.8rem;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+}
+
+input {
+    width: 250px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-width: 1px;
+    height: 22px;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+
+.submit-button {
+    position: relative;
+    top: 60px;
+}
+
+.submit-button button {
+    background-color: var(--form-button-color);
+    padding: 12px 50px;
+    color: var(--form-container-bg-color);
+    border-color: var(--form-button-color);
+    border-width: 0px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button p {
+    font-family: var(--form-content-font);
+}
+
+#login-text {
+    color: var(--form-button-color);
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(110, 110, 217);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}

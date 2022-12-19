@@ -51,7 +51,7 @@ body {
 }
 
 .call-to-action-text {
-    width: 60%;
+    width: max(600px, 60%);
     font-size: 1.5rem;
     font-weight: bold;
     font-family: var(--form-content-font);
